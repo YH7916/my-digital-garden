@@ -21,6 +21,9 @@ theme:
     - search.suggest # 搜索词输入建议
     - content.code.copy # 代码块添加“一键复制”按钮
     - content.code.annotate # 允许在代码块旁添加悬浮注释
+    - navigation.indexes  # 允许点击文件夹标题进入该目录的 index.md
+    - navigation.sections # 让不同文件夹在侧边栏呈现出明显的板块感
+    - navigation.expand   # (可选) 默认展开所有文件夹层级
 
   # 明暗模式切换 (极其精致的日月切换动画)
   palette:
@@ -39,13 +42,6 @@ theme:
         icon: material/weather-night
         name: 切换至浅色模式
 
-# ----------------- 导航栏结构 -----------------
-nav:
-  - 🏠 首页: index.md
-  - 👋 关于我: about.md
-  - 📚 笔记: Notes/           # 插件会自动扫描 Notes 文件夹下的所有层级
-  - 🛠️ 工具: Tools/           # 插件会自动扫描 Tools 文件夹
-  - ✍️ 碎笔: 朝花夕拾/        # 自动扫描
 
 # ----------------- 插件 -----------------
 plugins:
