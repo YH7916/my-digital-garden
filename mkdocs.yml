@@ -39,12 +39,17 @@ theme:
         icon: material/weather-night
         name: 切换至浅色模式
 
-# ----------------- 导航栏结构示例 -----------------
-# 这里可以根据你 Obsidian 的文件夹结构自行修改
-# nav:
-#   - 🏠 首页: index.md
-#   - 💻 代码仓库 (CodeField): codefield/index.md
-#   - 🎮 CuteGo 开发日志: cutego/index.md
+# ----------------- 导航栏结构 -----------------
+nav:
+  - 🏠 首页: index.md
+  - 📚 课程笔记:
+      - 总览: notes/index.md       # 这是解决“跳转到哪里”的关键
+      - 大物: 大物/index.md       # 确保大物文件夹里有一个 index.md
+      - 概统: 概统/index.md       # 确保概统文件夹里有一个 index.md
+  - 🛠️ 项目工坊:
+      - CuteGo 开发日志: projects/cutego.md
+  - ✍️ 朝花夕拾: 朝花夕拾/index.md
+  - 👋 关于我: about.md
 
 # ----------------- 插件 -----------------
 plugins:
@@ -97,11 +102,10 @@ markdown_extensions:
       custom_checkbox: true # 漂亮的复选框样式
 
 # ----------------- 自定义脚本与样式 -----------------
-# 注意：确保你的 docs/javascripts 和 docs/stylesheets 文件夹下有这两个文件，否则可以把这两块删掉
 extra_javascript:
-  - javascripts/mathjax.js
+  - assets/javascripts/mathjax.js  
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:
-  - stylesheets/extra.css
+  - assets/stylesheets/extra.css  
