@@ -164,13 +164,23 @@
               "icon": "lucide-list",
               "title": "index 的大纲"
             }
+          },
+          {
+            "id": "eb6530c3073e5212",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,7 +190,9 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:新建数据库": false
+      "bases:新建数据库": false,
+      "githobs:Manage a github issue": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "dcc5f5de56b75390",
