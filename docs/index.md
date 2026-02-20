@@ -17,7 +17,7 @@ github_repo: YH7916
 
 在这里，你可以快速访问我不同领域的探索记录：
 
-!!! note "📚 课程笔记 (Academic Archive)"
+!!! note "📚 课程笔记"
     这里记录了我在浙大CS的一些课程笔记和心得。
     [查阅专业课笔记](Notes/index.md)
 

@@ -42,19 +42,16 @@ theme:
 # ----------------- 导航栏结构 -----------------
 nav:
   - 🏠 首页: index.md
-  - 📚 笔记:
-      - 总览: Notes/index.md       # 这是解决“跳转到哪里”的关键
-      - 大物: Notes/大物/index.md       # 确保大物文件夹里有一个 index.md
-      - 概统: Notes/概统/index.md       # 确保概统文件夹里有一个 index.md
-  - 🛠️ 工具:
-      - 总览: Tools/index.md
-  - ✍️ 碎笔: 朝花夕拾/index.md
   - 👋 关于我: about.md
+  - 📚 笔记: Notes/           # 插件会自动扫描 Notes 文件夹下的所有层级
+  - 🛠️ 工具: Tools/           # 插件会自动扫描 Tools 文件夹
+  - ✍️ 碎笔: 朝花夕拾/        # 自动扫描
 
 # ----------------- 插件 -----------------
 plugins:
   - search
   - roamlinks # 完美渲染 Obsidian 的 [[双向链接]]
+  - awesome-pages
 
 # ----------------- Markdown 渲染引擎 (核心魔法) -----------------
 markdown_extensions:
