@@ -1,6 +1,6 @@
 {
   "userIgnoreFilters": [
-    "javascripts/",
-    "stylesheets/"
-  ]
+    "javascripts"
+  ],
+  "alwaysUpdateLinks": true
 }
