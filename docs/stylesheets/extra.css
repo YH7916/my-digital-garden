@@ -1,0 +1,21 @@
+/* 让表格强制显示边框和线条 */
+.md-typeset table:not([class]) {
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-collapse: collapse;
+    display: inline-block;
+    /* 修复某些情况下的宽度溢出 */
+    max-width: 100%;
+}
+
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+    border: 1px solid var(--md-default-fg-color--lightest);
+    /* 添加内部边框 */
+    padding: 9px;
+}
+
+/* 修复数学公式在深色模式下的显示问题（防止变黑看不见） */
+.md-typeset .arithmatex,
+.MathJax {
+    color: var(--md-default-fg-color) !important;
+}

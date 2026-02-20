@@ -1,0 +1,107 @@
+site_name: Yohaku 的数字花园
+site_description: 欢迎光临我的小世界！
+site_author: Yohaku
+
+# ----------------- 界面与视觉配置 -----------------
+theme:
+  name: material
+  language: zh
+  # 字体设置 (选用优雅的无衬线字体)
+  font:
+    text: Noto Sans
+    code: Fira Code
+  
+  # 交互与 UI 特性
+  features:
+    - navigation.tabs # 顶部分类标签
+    - navigation.tabs.sticky # 向下滚动时标签页固定在顶部
+    - navigation.top # 返回顶部按钮
+    - navigation.tracking # 滚动页面时，侧边栏自动高亮当前所在的章节
+    - search.highlight # 搜索结果高亮
+    - search.suggest # 搜索词输入建议
+    - content.code.copy # 代码块添加“一键复制”按钮
+    - content.code.annotate # 允许在代码块旁添加悬浮注释
+
+  # 明暗模式切换 (极其精致的日月切换动画)
+  palette:
+    - media: "(prefers-color-scheme: light)" # 明
+      scheme: default
+      primary: white # 浅色模式主色调（留白更显干净）
+      accent: indigo # 强调色
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至深色模式
+    - media: "(prefers-color-scheme: dark)" # 暗
+      scheme: slate
+      primary: black # 深色模式主色调
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: 切换至浅色模式
+
+# ----------------- 导航栏结构示例 -----------------
+# 这里可以根据你 Obsidian 的文件夹结构自行修改
+# nav:
+#   - 🏠 首页: index.md
+#   - 💻 代码仓库 (CodeField): codefield/index.md
+#   - 🎮 CuteGo 开发日志: cutego/index.md
+
+# ----------------- 插件 -----------------
+plugins:
+  - search
+  - roamlinks # 完美渲染 Obsidian 的 [[双向链接]]
+
+# ----------------- Markdown 渲染引擎 (核心魔法) -----------------
+markdown_extensions:
+  - abbr
+  - admonition # 漂亮的提示框 (!!! note)
+  - attr_list # 允许使用 {: width="300"} 语法调整图片大小
+  - def_list
+  - footnotes # 脚注
+  - md_in_html
+  - toc:
+      permalink: true # 生成段落锚点链接 (标题旁边的段落符号)
+  
+  # 数学公式
+  - pymdownx.arithmatex: 
+      generic: true
+  
+  # 字体与排版优化
+  - pymdownx.betterem: # 优化粗体和斜体
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  
+  # 高级排版控件
+  - pymdownx.details # 折叠详情 (??? info)
+  - pymdownx.emoji: # Emoji 支持
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  
+  # 代码块极其强大的扩展
+  - pymdownx.highlight: # 代码高亮
+      anchor_linenums: true # 代码行号
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite # 行内代码高亮
+  - pymdownx.snippets # 支持代码片段导入
+  - pymdownx.superfences: # 支持复杂的代码块嵌套与 Mermaid 流程图
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  
+  # 任务列表
+  - pymdownx.tasklist: 
+      custom_checkbox: true # 漂亮的复选框样式
+
+# ----------------- 自定义脚本与样式 -----------------
+# 注意：确保你的 docs/javascripts 和 docs/stylesheets 文件夹下有这两个文件，否则可以把这两块删掉
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css

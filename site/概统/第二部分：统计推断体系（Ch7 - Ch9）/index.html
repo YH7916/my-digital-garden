@@ -1,0 +1,1740 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="欢迎光临我的小世界！">
+      
+      
+        <meta name="author" content="Yohaku">
+      
+      
+      
+        <link rel="prev" href="../%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86%EF%BC%9A%E6%A6%82%E7%8E%87%E8%AE%BA%E6%A0%B8%E5%BF%83%E8%AE%A1%E7%AE%97%E4%B8%8E%E5%A4%A7%E6%95%B0%E5%AE%9A%E5%BE%8B%20(Ch1%20-%20Ch6)/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.23">
+    
+    
+      
+        <title>第二部分：统计推断体系（Ch7 Ch9） - Yohaku 的数字花园</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.1e989742.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:300,300i,400,400i,500,500i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="Yohaku 的数字花园" class="md-header__button md-logo" aria-label="Yohaku 的数字花园" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Yohaku 的数字花园
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第二部分：统计推断体系（Ch7   Ch9）
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="切换至深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换至深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="切换至浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换至浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="查找">
+  <button type="button" class="md-search__button">
+    查找
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  Index
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E5%A4%A7%E7%89%A9/%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0/" class="md-tabs__link">
+          
+  
+  大物
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E6%9C%9D%E8%8A%B1%E5%A4%95%E6%8B%BE/2018%E5%B9%B4%EF%BC%8C%E8%B5%AB%E9%B2%81%E6%99%93%E5%A4%AB%E6%A5%BC%E9%87%8C%E4%B8%8A%E6%8B%A9%E6%A0%A1%E8%A1%A5%E8%AF%BE%E7%8F%AD%E7%9A%84%E6%97%A5%E5%AD%90/" class="md-tabs__link">
+          
+  
+  朝花夕拾
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../%E6%A6%82%E7%BB%9F/" class="md-tabs__link">
+          
+  
+  概统
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Yohaku 的数字花园" class="md-nav__button md-logo" aria-label="Yohaku 的数字花园" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    Yohaku 的数字花园
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    大物
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    大物
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%A7%E7%89%A9/%E6%9C%9F%E4%B8%AD%E5%A4%8D%E4%B9%A0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    期中复习
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%A7%E7%89%A9/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%EF%BC%9A%E5%85%89%E5%AD%A6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    期末复习：光学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%A7%E7%89%A9/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%EF%BC%9A%E7%94%B5%E7%A3%81%E5%AD%A6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    期末复习：电磁学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%A7%E7%89%A9/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%EF%BC%9A%E9%87%8F%E5%AD%90%E7%89%A9%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    期末复习：量子物理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%A7%E7%89%A9/%E7%94%B5%E7%A3%81%E5%AD%A6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    《大学物理乙2》期中核心考点与速成指南
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%A4%A7%E7%89%A9/%E7%9F%A5%E8%AF%86%E7%82%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    知识点
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    朝花夕拾
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    朝花夕拾
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9C%9D%E8%8A%B1%E5%A4%95%E6%8B%BE/2018%E5%B9%B4%EF%BC%8C%E8%B5%AB%E9%B2%81%E6%99%93%E5%A4%AB%E6%A5%BC%E9%87%8C%E4%B8%8A%E6%8B%A9%E6%A0%A1%E8%A1%A5%E8%AF%BE%E7%8F%AD%E7%9A%84%E6%97%A5%E5%AD%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2018年，赫鲁晓夫楼里上择校补课班的日子
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9C%9D%E8%8A%B1%E5%A4%95%E6%8B%BE/%E3%80%8C%E5%AD%A6%E9%9C%B8%E5%8F%98%E5%AD%A6%E6%B8%A3%E3%80%8D%E5%92%8C%E3%80%8C%E5%AD%A6%E6%B8%A3%E5%8F%98%E5%AD%A6%E9%9C%B8%E3%80%8D%E5%88%86%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E4%BD%93%E9%AA%8C%EF%BC%9F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    「学霸变学渣」和「学渣变学霸」分别是什么样的体验？
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9C%9D%E8%8A%B1%E5%A4%95%E6%8B%BE/%E4%B8%83%E5%A4%95%E5%BF%AB%E4%B9%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    七夕快乐
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9C%9D%E8%8A%B1%E5%A4%95%E6%8B%BE/%E5%8D%81%E4%BA%8C%E6%9C%88%E6%9C%AB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    十二月末
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9C%9D%E8%8A%B1%E5%A4%95%E6%8B%BE/%E9%9B%B6%E4%B8%8A%E5%8D%81%E5%9B%9B%E5%BA%A6%EF%BC%8C%E6%88%91%E7%9A%84%E5%BF%83%E9%87%8C%E4%B8%8B%E4%BA%86%E4%B8%80%E5%9C%BA%E9%9B%AA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    零上十四度，我的心里下了一场雪
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    更古早的说说
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    更古早的说说
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9C%9D%E8%8A%B1%E5%A4%95%E6%8B%BE/%E6%9B%B4%E5%8F%A4%E6%97%A9%E7%9A%84%E8%AF%B4%E8%AF%B4/2023.7.30/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023.7.30
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9C%9D%E8%8A%B1%E5%A4%95%E6%8B%BE/%E6%9B%B4%E5%8F%A4%E6%97%A9%E7%9A%84%E8%AF%B4%E8%AF%B4/%E5%A4%A9%E5%9C%B0%E4%BA%BA,%E4%BD%A0%E6%88%91%E4%BB%96/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    天地人,你我他
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9C%9D%E8%8A%B1%E5%A4%95%E6%8B%BE/%E6%9B%B4%E5%8F%A4%E6%97%A9%E7%9A%84%E8%AF%B4%E8%AF%B4/%E9%97%B2%E8%81%8A%E8%80%8C%E5%B7%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    闲聊而已
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    概统
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    概统
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%A6%82%E7%BB%9F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    概统
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86%EF%BC%9A%E6%A6%82%E7%8E%87%E8%AE%BA%E6%A0%B8%E5%BF%83%E8%AE%A1%E7%AE%97%E4%B8%8E%E5%A4%A7%E6%95%B0%E5%AE%9A%E5%BE%8B%20(Ch1%20-%20Ch6)/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第一部分：概率论核心计算与大数定律 (Ch1   Ch6)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第二部分：统计推断体系（Ch7   Ch9）
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第二部分：统计推断体系（Ch7   Ch9）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第七章：统计量与抽样分布（准备工作）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第七章：统计量与抽样分布（准备工作）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 三大分布的构造（【背诵】形状）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 正态总体的“费雪定理”（【背诵】枢轴量的来源）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 真题实战
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第八章：点估计（计算大题前奏）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第八章：点估计（计算大题前奏）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-mme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 矩估计 (MME)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-mle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 极大似然估计 (MLE) —— 必考
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 估计量评价
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第九章：区间估计与假设检验（以枢轴量为纲）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第九章：区间估计与假设检验（以枢轴量为纲）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nmu-sigma2-mu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        场景一：单个正态总体 \(N(\mu, \sigma^2)\)，测均值 \(\mu\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nmu-sigma2-sigma2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        场景二：单个正态总体 \(N(\mu, \sigma^2)\)，测方差 \(\sigma^2\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mu_1-mu_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        场景三：两个正态总体，比较均值 \(\mu_1 - \mu_2\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sigma_12-sigma_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        场景四：两个正态总体，比较方差 \(\sigma_1^2 / \sigma_2^2\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        考试最后提醒
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第七章：统计量与抽样分布（准备工作）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第七章：统计量与抽样分布（准备工作）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 三大分布的构造（【背诵】形状）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 正态总体的“费雪定理”（【背诵】枢轴量的来源）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 真题实战
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第八章：点估计（计算大题前奏）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第八章：点估计（计算大题前奏）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-mme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 矩估计 (MME)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-mle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 极大似然估计 (MLE) —— 必考
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 估计量评价
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第九章：区间估计与假设检验（以枢轴量为纲）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第九章：区间估计与假设检验（以枢轴量为纲）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nmu-sigma2-mu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        场景一：单个正态总体 \(N(\mu, \sigma^2)\)，测均值 \(\mu\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nmu-sigma2-sigma2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        场景二：单个正态总体 \(N(\mu, \sigma^2)\)，测方差 \(\sigma^2\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mu_1-mu_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        场景三：两个正态总体，比较均值 \(\mu_1 - \mu_2\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sigma_12-sigma_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        场景四：两个正态总体，比较方差 \(\sigma_1^2 / \sigma_2^2\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        考试最后提醒
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <h1>第二部分：统计推断体系（Ch7   Ch9）</h1>
+
+<p>这一部分是你的重中之重。正如你所说，<strong>“枢轴量” (Pivot Quantity)</strong> 是贯穿这三章的唯一灵魂。</p>
+<p>只要你能写出枢轴量，<strong>抽样分布（求概率）、区间估计（求范围）、假设检验（求拒绝域）</strong> 其实是同一个公式的三种不同写法。</p>
+<hr />
+<h2 id="_1">第七章：统计量与抽样分布（准备工作）<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>这一章的任务是**认识枢轴量的零件**。你不需要去证明它们，只需要死记硬背它们的**构造形式**。</p>
+<h3 id="1">1. 三大分布的构造（【背诵】形状）<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong><span class="arithmatex">\(\chi^2\)</span> 分布</strong>：<span class="arithmatex">\(n\)</span> 个标准正态的平方和。<ul>
+<li>形式：<span class="arithmatex">\(\sum Z_i^2 \sim \chi^2(n)\)</span></li>
+<li>期望：<span class="arithmatex">\(n\)</span>，方差：<span class="arithmatex">\(2n\)</span>。</li>
+</ul>
+</li>
+<li><strong><span class="arithmatex">\(t\)</span> 分布</strong>：正态除以 <span class="arithmatex">\(\sqrt{卡方除以自由度}\)</span>。<ul>
+<li>形式：<span class="arithmatex">\(\frac{X}{\sqrt{Y/n}} \sim t(n)\)</span>，其中 <span class="arithmatex">\(X \sim N(0,1), Y \sim \chi^2(n)\)</span>。</li>
+<li><strong>关键特征</strong>：<span class="arithmatex">\(t\)</span> 分布是“样本均值”和“样本方差”混合的产物。</li>
+</ul>
+</li>
+<li><strong><span class="arithmatex">\(F\)</span> 分布</strong>：两个卡方除以各自自由度之比。<ul>
+<li>形式：<span class="arithmatex">\(\frac{U/n_1}{V/n_2} \sim F(n_1, n_2)\)</span>。</li>
+<li>性质：<span class="arithmatex">\(F_{1-\alpha}(n_1, n_2) = \frac{1}{F_{\alpha}(n_2, n_1)}\)</span> （查表用）。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2">2. 正态总体的“费雪定理”（【背诵】枢轴量的来源）<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p>设总体 <span class="arithmatex">\(X \sim N(\mu, \sigma^2)\)</span>，样本为 <span class="arithmatex">\(X_1...X_n\)</span>，则：
+1.  <strong>样本均值</strong>：<span class="arithmatex">\(\bar{X} \sim N(\mu, \frac{\sigma^2}{n})\)</span> <span class="arithmatex">\(\Rightarrow\)</span> 标准化后 <span class="arithmatex">\(Z = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} \sim N(0,1)\)</span>
+2.  <strong>样本方差</strong>：<span class="arithmatex">\(\frac{(n-1)S^2}{\sigma^2} \sim \chi^2(n-1)\)</span>
+3.  <strong>独立性</strong>：<span class="arithmatex">\(\bar{X}\)</span> 与 <span class="arithmatex">\(S^2\)</span> <strong>相互独立</strong>（这是构造 <span class="arithmatex">\(t\)</span> 分布的基础）。</p>
+<h3 id="3">3. 真题实战<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<p><strong>【真题 7.6】(23-24 春夏, 4)</strong></p>
+<blockquote>
+<p><strong>题目</strong>：设 <span class="arithmatex">\(X_i\)</span> 来自 <span class="arithmatex">\(N(\mu, \sigma^2)\)</span>。问 <span class="arithmatex">\((\frac{X_1+X_2-X_3-\mu}{X_2+X_3-X_4-\mu})^2\)</span> 服从什么分布？</p>
+<p><strong>解法</strong>：<strong>“凑”定义</strong>。
+*   分子、分母都是正态变量的线性组合，还是正态。
+*   <span class="arithmatex">\(U = X_1+X_2-X_3-\mu \sim N(0, 3\sigma^2)\)</span>。
+*   <span class="arithmatex">\(V = X_2+X_3-X_4-\mu \sim N(0, 3\sigma^2)\)</span>。
+*   标准化：<span class="arithmatex">\(\frac{U}{\sqrt{3}\sigma} \sim N(0,1)\)</span>。
+*   原式平方 <span class="arithmatex">\(= \frac{U^2}{V^2} = \frac{(U/\sqrt{3}\sigma)^2}{(V/\sqrt{3}\sigma)^2}\)</span>。
+*   这是两个标准正态平方之比 <span class="arithmatex">\(\Rightarrow \frac{\chi^2(1)}{\chi^2(1)} = \frac{\chi^2(1)/1}{\chi^2(1)/1} \sim F(1,1)\)</span>。</p>
+</blockquote>
+<hr />
+<h2 id="_2">第八章：点估计（计算大题前奏）<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>这章不涉及枢轴量，纯计算。</p>
+<h3 id="1-mme">1. 矩估计 (MME)<a class="headerlink" href="#1-mme" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>方法</strong>：用样本的一阶矩（均值）等于总体一阶矩（期望）。</li>
+<li><strong>公式</strong>：令 <span class="arithmatex">\(\bar{X} = E(X)\)</span>，解出参数 <span class="arithmatex">\(\theta\)</span>。<ul>
+<li>如果有两个参数，再加一个方程：<span class="arithmatex">\(\frac{1}{n}\sum X_i^2 = E(X^2) = D(X) + [E(X)]^2\)</span>。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-mle">2. 极大似然估计 (MLE) —— <strong>必考</strong><a class="headerlink" href="#2-mle" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>步骤（死步骤）</strong>：<ol>
+<li><strong>写似然函数</strong>：<span class="arithmatex">\(L(\theta) = \prod_{i=1}^n f(x_i; \theta)\)</span>。</li>
+<li><strong>取对数</strong>：<span class="arithmatex">\(\ln L(\theta) = \sum \ln f(x_i; \theta)\)</span>。</li>
+<li><strong>求导置0</strong>：<span class="arithmatex">\(\frac{d \ln L}{d \theta} = 0\)</span>，解出 <span class="arithmatex">\(\hat{\theta}\)</span>。</li>
+</ol>
+</li>
+<li><strong>难点</strong>：如果是均匀分布 <span class="arithmatex">\(U(0, \theta)\)</span>，密度函数不是连续可导的。<ul>
+<li><span class="arithmatex">\(L(\theta) = \frac{1}{\theta^n}\)</span>，条件是所有 <span class="arithmatex">\(x_i \le \theta\)</span>。</li>
+<li>要使 <span class="arithmatex">\(1/\theta^n\)</span> 最大，<span class="arithmatex">\(\theta\)</span> 必须尽可能小，但必须大于所有样本。</li>
+<li><strong>结果</strong>：<span class="arithmatex">\(\hat{\theta}_{MLE} = \max(X_1, ..., X_n)\)</span>。</li>
+</ul>
+</li>
+</ul>
+<h3 id="3_1">3. 估计量评价<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>无偏性</strong>：计算 <span class="arithmatex">\(E(\hat{\theta})\)</span>，看是否等于 <span class="arithmatex">\(\theta\)</span>。</li>
+<li><strong>相合性</strong>：当 <span class="arithmatex">\(n \to \infty\)</span> 时，<span class="arithmatex">\(\hat{\theta}\)</span> 是否依概率收敛于 <span class="arithmatex">\(\theta\)</span>（通常看方差是否趋于0）。</li>
+</ul>
+<hr />
+<h2 id="_3">第九章：区间估计与假设检验（以枢轴量为纲）<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p><strong>必杀技</strong>：记住下面 <strong>4个表格中的枢轴量</strong>，你就通关了。
+<strong>逻辑</strong>：
+*   <strong>区间估计</strong>：<span class="arithmatex">\(P(-k &lt; \text{枢轴量} &lt; k) = 1-\alpha\)</span>，反解出参数范围。
+*   <strong>假设检验</strong>：计算枢轴量的值，看它是否落在拒绝域（尾巴）里。</p>
+<h3 id="nmu-sigma2-mu">场景一：单个正态总体 <span class="arithmatex">\(N(\mu, \sigma^2)\)</span>，测均值 <span class="arithmatex">\(\mu\)</span><a class="headerlink" href="#nmu-sigma2-mu" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">条件</th>
+<th style="text-align: left;">枢轴量 (统计量) <strong>【背诵】</strong></th>
+<th style="text-align: left;">95% 置信区间</th>
+<th style="text-align: left;">检验 <span class="arithmatex">\(H_0: \mu = \mu_0\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\sigma^2\)</span> <strong>已知</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(Z = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} \sim N(0,1)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\bar{X} \pm 1.96\frac{\sigma}{\sqrt{n}}\)</span></td>
+<td style="text-align: left;">$</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\sigma^2\)</span> <strong>未知</strong> (考得最多)</td>
+<td style="text-align: left;"><span class="arithmatex">\(T = \frac{\bar{X}-\mu}{S/\sqrt{n}} \sim t(n-1)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\bar{X} \pm t_{\alpha/2}(n-1)\frac{S}{\sqrt{n}}\)</span></td>
+<td style="text-align: left;">$</td>
+</tr>
+</tbody>
+</table>
+<p><strong>【真题 9.1】(24-25 春夏, 6)</strong></p>
+<blockquote>
+<p><strong>题目</strong>：<span class="arithmatex">\(n=10, \bar{X}=5, \sum X^2=300\)</span>。<span class="arithmatex">\(\sigma\)</span> 未知，求 <span class="arithmatex">\(\mu\)</span> 的下限。</p>
+<p><strong>解法</strong>：
+1.  算 <span class="arithmatex">\(S^2\)</span>：<span class="arithmatex">\(S^2 = \frac{1}{9}(300 - 10 \times 5^2) = \frac{50}{9}\)</span>。
+2.  <strong>选枢轴量</strong>：<span class="arithmatex">\(\sigma\)</span> 未知，用 <span class="arithmatex">\(T = \frac{\bar{X}-\mu}{S/\sqrt{n}}\)</span>。
+3.  <strong>求下限</strong>：<span class="arithmatex">\(\mu &gt; \bar{X} - t_\alpha(n-1)\frac{S}{\sqrt{n}}\)</span>。</p>
+</blockquote>
+<h3 id="nmu-sigma2-sigma2">场景二：单个正态总体 <span class="arithmatex">\(N(\mu, \sigma^2)\)</span>，测方差 <span class="arithmatex">\(\sigma^2\)</span><a class="headerlink" href="#nmu-sigma2-sigma2" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">条件</th>
+<th style="text-align: left;">枢轴量 (统计量) <strong>【背诵】</strong></th>
+<th style="text-align: left;">95% 置信区间</th>
+<th style="text-align: left;">检验 <span class="arithmatex">\(H_0: \sigma^2 = \sigma_0^2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\mu\)</span> 未知</td>
+<td style="text-align: left;"><span class="arithmatex">\(\chi^2 = \frac{(n-1)S^2}{\sigma^2} \sim \chi^2(n-1)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\([\frac{(n-1)S^2}{\chi^2_{0.025}}, \frac{(n-1)S^2}{\chi^2_{0.975}}]\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\chi^2\)</span> 太大或太小则拒绝</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>注意</strong>：<span class="arithmatex">\(\chi^2\)</span> 分布不对称，置信区间不对称。求下限用 <span class="arithmatex">\(\chi^2_{1-\alpha}\)</span>（大的分位点），求上限用 <span class="arithmatex">\(\chi^2_{\alpha}\)</span>（小的分位点），因为 <span class="arithmatex">\(\sigma^2\)</span> 在分母上，翻上来会变号。</li>
+</ul>
+<p><strong>【真题 9.4】(22-23 秋冬, 9)</strong></p>
+<blockquote>
+<p><strong>题目</strong>：<span class="arithmatex">\(n=16, S^2=36\)</span>。检验 <span class="arithmatex">\(H_0: \sigma^2 = 84\)</span>。</p>
+<p><strong>解法</strong>：
+1.  <strong>枢轴量</strong>：<span class="arithmatex">\(\chi^2 = \frac{(n-1)S^2}{\sigma_0^2} = \frac{15 \times 36}{84} \approx 6.429\)</span>。
+2.  <strong>临界值</strong>：查 <span class="arithmatex">\(\chi^2_{0.025}(15) \approx 27.5, \chi^2_{0.975}(15) \approx 6.26\)</span>。
+3.  <strong>判断</strong>：<span class="arithmatex">\(6.26 &lt; 6.429 &lt; 27.5\)</span>，统计量在中间（接受域），<strong>不拒绝</strong>。</p>
+</blockquote>
+<h3 id="mu_1-mu_2">场景三：两个正态总体，比较均值 <span class="arithmatex">\(\mu_1 - \mu_2\)</span><a class="headerlink" href="#mu_1-mu_2" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">条件</th>
+<th style="text-align: left;">枢轴量 (统计量) <strong>【背诵】</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\sigma_1^2 = \sigma_2^2\)</span> 但未知</td>
+<td style="text-align: left;"><span class="arithmatex">\(T = \frac{(\bar{X}-\bar{Y}) - (\mu_1-\mu_2)}{S_w \sqrt{\frac{1}{n_1}+\frac{1}{n_2}}} \sim t(n_1+n_2-2)\)</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>合并方差 <span class="arithmatex">\(S_w^2\)</span></strong>：<span class="arithmatex">\(S_w^2 = \frac{(n_1-1)S_1^2 + (n_2-1)S_2^2}{n_1+n_2-2}\)</span> （就是两个样本方差的加权平均）。</li>
+</ul>
+<p><strong>【真题 9.6】(24-25 春夏, 12)</strong></p>
+<blockquote>
+<p><strong>题目</strong>：两组数据 <span class="arithmatex">\(S_1^2, S_2^2\)</span>。先检验方差齐性，再求均值差的区间。</p>
+<p><strong>解法</strong>：
+1.  <strong>检验方差</strong>：用 <span class="arithmatex">\(F\)</span> 检验（见场景四）。
+2.  <strong>求均值差区间</strong>：确认方差相等后，计算 <span class="arithmatex">\(S_w\)</span>，构造 <span class="arithmatex">\(T\)</span> 枢轴量。
+    区间 <span class="arithmatex">\(= (\bar{X}-\bar{Y}) \pm t_{\alpha/2}(df) \cdot S_w \sqrt{\frac{1}{n_1}+\frac{1}{n_2}}\)</span>。</p>
+</blockquote>
+<h3 id="sigma_12-sigma_22">场景四：两个正态总体，比较方差 <span class="arithmatex">\(\sigma_1^2 / \sigma_2^2\)</span><a class="headerlink" href="#sigma_12-sigma_22" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">条件</th>
+<th style="text-align: left;">枢轴量 (统计量) <strong>【背诵】</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\mu\)</span> 未知</td>
+<td style="text-align: left;"><span class="arithmatex">\(F = \frac{S_1^2 / \sigma_1^2}{S_2^2 / \sigma_2^2} \sim F(n_1-1, n_2-1)\)</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>检验 <span class="arithmatex">\(H_0: \sigma_1^2 = \sigma_2^2\)</span></strong>：<ul>
+<li>统计量 <span class="arithmatex">\(F = S_1^2 / S_2^2\)</span>。</li>
+<li>如果 <span class="arithmatex">\(F &gt; F_{\alpha/2}\)</span> 或 <span class="arithmatex">\(F &lt; F_{1-\alpha/2}\)</span>，则拒绝（即两个方差差别太大）。</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="_4">考试最后提醒<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>P值怎么算？</strong><ul>
+<li><span class="arithmatex">\(P\_value = P(|T| &gt; |t_{算}|)\)</span>。</li>
+<li>也就是：在 <span class="arithmatex">\(t\)</span> 分布图上，你算出来的统计量外面的**尾巴面积**。单侧检验算一边，双侧检验乘2。</li>
+</ul>
+</li>
+<li><strong>单侧还是双侧？</strong><ul>
+<li>题目问“是否相等”、“是否有差异” <span class="arithmatex">\(\to\)</span> <strong>双侧</strong> (<span class="arithmatex">\(\alpha/2\)</span>)。</li>
+<li>题目问“是否大于”、“是否优于” <span class="arithmatex">\(\to\)</span> <strong>单侧</strong> (<span class="arithmatex">\(\alpha\)</span>)。</li>
+</ul>
+</li>
+<li><strong>手算开根号</strong>：考试允许带计算器最好，如果不让带，遇到 <span class="arithmatex">\(\sqrt{10}\)</span> 这种，保留根号或者近似 <span class="arithmatex">\(3.16\)</span> 即可。</li>
+</ol>
+<p>把这四个场景的表格记在纸上，考试前看最后一遍，统计推断的大题就是**完形填空**。祝你满分！</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.tabs","navigation.tabs.sticky","navigation.top","navigation.tracking","search.highlight","search.suggest","content.code.copy","content.code.annotate"],"search":"../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"已复制","clipboard.copy":"复制","search.result.more.one":"在该页上还有 1 个符合条件的结果","search.result.more.other":"在该页上还有 # 个符合条件的结果","search.result.none":"没有找到符合条件的结果","search.result.one":"找到 1 个符合条件的结果","search.result.other":"# 个符合条件的结果","search.result.placeholder":"键入以开始搜索","search.result.term.missing":"缺少","select.version":"选择当前版本"},"version":null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5fcf0de6.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
