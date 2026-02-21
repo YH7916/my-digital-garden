@@ -27,9 +27,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "🛠️ 工具/index.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "index"
@@ -211,9 +211,11 @@
   },
   "active": "078328b62f5d5555",
   "lastOpenFiles": [
-    "👋 关于.md",
+    "✍️ 碎笔/index.md",
+    "🛠️ 工具/index.md",
     "📚 笔记/index.md",
     "index.md",
+    "👋 关于.md",
     "🛠️ 工具/使用Zensical构建笔记流.md",
     "✍️ 碎笔/更古早的说说/闲聊而已.md",
     "✍️ 碎笔/更古早的说说/天地人,你我他.md",
@@ -223,10 +225,8 @@
     "✍️ 碎笔/十二月末.md",
     "✍️ 碎笔/七夕快乐.md",
     "✍️ 碎笔/「学霸变学渣」和「学渣变学霸」分别是什么样的体验？.md",
-    "✍️ 碎笔/index.md",
     "✍️ 碎笔/2018年，赫鲁晓夫楼里上择校补课班的日子.md",
     "✍️ 碎笔",
-    "🛠️ 工具/index.md",
     "🛠️ 工具",
     "Notes/大物/期末复习：电磁学.md",
     "📚 笔记/概统/第二部分：统计推断体系（Ch7 - Ch9）.md",
