@@ -9,6 +9,7 @@ github_repo: YH7916
 
 欢迎来到我的数字花园！这里是我在求学之路上的思考沉淀，涵盖了硬核的计算机技术、实用的开发工具，以及忙里偷闲的文字碎笔。
 
+[开始探索笔记](📚 笔记/index.md){ .md-button .md-button--primary }
 [关于我](about.md){ .md-button }
 
 ---

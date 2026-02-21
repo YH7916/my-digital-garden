@@ -1,0 +1,20 @@
+[project]
+name = "yohaku-digital-garden"
+version = "0.1.0"
+description = "Yohaku 的数字花园"
+requires-python = ">=3.9"
+
+dependencies = [
+    "zensical",
+    "mkdocs-material",
+    "mkdocs-roamlinks-plugin",
+    "mkdocs-awesome-pages-plugin",
+    "pymdown-extensions"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+bypass-selection = true
