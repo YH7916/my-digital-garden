@@ -24,11 +24,11 @@ github_repo: YH7916
 
 !!! tip "🛠️ 工具与项目工坊"
     这里记录了我平时折腾的各种妙妙工具和开发日志！
-    [查看开发日志与工具](Tools/index)
+    [查看开发日志与工具](Tools/index.md)
 
 !!! abstract "✍️ 碎笔杂言"
     存放我以前写的小作文，以及平时的一些随笔杂感。
-    [浏览感性生活](Musings/index.md)
+    [浏览感性生活](Diary/index.md)
 
 ---
 
