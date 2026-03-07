@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dev/力扣Hot100/DAY01.md",
+                "file": "Dev/力扣Hot100/DAY01（3.7）.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "DAY01"
+              "title": "DAY01（3.7）"
             }
           }
         ]
@@ -193,12 +193,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "98d5f3c62ca1491e",
+  "active": "eb6530c3073e5212",
   "lastOpenFiles": [
     "Dev/力扣Hot100/index.md",
     "Dev/index.md",
     "Notes/index.md",
-    "Dev/力扣Hot100/DAY01.md",
+    "Dev/力扣Hot100/DAY01（3.7）.md",
     "Dev/力扣Hot100",
     "Dev",
     "Tools/使用Zensical构建笔记流.md",
