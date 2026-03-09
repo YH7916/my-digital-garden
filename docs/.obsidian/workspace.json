@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dev/力扣Hot100/DAY01（3.7）.md",
+                "file": "Dev/力扣Hot100/DAY02（3.9）.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "DAY01（3.7）"
+              "title": "DAY02（3.9）"
             }
           }
         ]
@@ -193,12 +193,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "eb6530c3073e5212",
+  "active": "98d5f3c62ca1491e",
   "lastOpenFiles": [
+    "Dev/力扣Hot100/DAY01（3.7）.md",
+    "Dev/力扣Hot100/DAY02（3.9）.md",
     "Dev/力扣Hot100/index.md",
     "Dev/index.md",
     "Notes/index.md",
-    "Dev/力扣Hot100/DAY01（3.7）.md",
     "Dev/力扣Hot100",
     "Dev",
     "Tools/使用Zensical构建笔记流.md",
@@ -225,7 +226,6 @@
     "Notes/概统/概统.md",
     "Notes/大物/知识点.md",
     "Notes/大物/电磁学.md",
-    "Notes/大物/期末复习：量子物理.md",
     "Notes/概统",
     "Notes/大物",
     "Notes",
