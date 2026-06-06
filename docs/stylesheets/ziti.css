@@ -1,0 +1,7 @@
+/* 霞鹜文楷：智能分包，只加载页面实际使用的汉字 */
+@import url('https://cdn.jsdelivr.net/npm/@callmebill/lxgw-wenkai-web@latest/style.css');
+
+body {
+  font-family: "LXGW WenKai", sans-serif;
+  font-weight: normal;
+}

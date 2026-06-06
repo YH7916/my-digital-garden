@@ -1,0 +1,13 @@
+{
+  "concepts/attention-mechanism.md": "concepts/attention-mechanism.md",
+  "learning/llm-interview/agent-internship/12-kimi-interview-debrief-2026-05-23.md": "Career/Interview/kimi-first-round-debrief.md",
+  "learning/llm-interview/agent-internship/19-kimi-second-round-debrief-2026-05-28.md": "Career/Interview/kimi-second-round-debrief.md",
+  "learning/llm-interview/agent-internship/23-taotian-agent-interview-experience-2026-06-04.md": "Career/Interview/taotian-agent-first-round.md",
+  "learning/llm-interview/agent-internship/24-taotian-agent-second-round-experience-2026-06-04.md": "Career/Interview/taotian-agent-second-round.md",
+  "learning/tinyml/lab1-pruning.md": "Research/TinyML/lab1-pruning.md",
+  "learning/tinyml/lab2-quantization.md": "Research/TinyML/lab2-quantization.md",
+  "learning/tinyml/lab3-nas.md": "Research/TinyML/lab3-nas.md",
+  "learning/tinyml/lab4-awq.md": "Research/TinyML/lab4-awq.md",
+  "learning/tinyml/overview.md": "Research/TinyML/overview.md",
+  "projects/internship/younavi-agent-interview-deep-dive.md": "Career/Internship/younavi-agent-deep-dive.md"
+}

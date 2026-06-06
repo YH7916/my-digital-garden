@@ -1,6 +1,9 @@
 site_name: Yohaku 的数字花园
-site_description: 欢迎光临我的小世界！
+site_description: 浙大CS学生的技术笔记与生活碎片
 site_author: Yohaku
+copyright: Copyright &copy; 2024~2026 Yohaku
+repo_url: https://github.com/YH7916
+repo_name: YH7916
 
 # ----------------- 界面与视觉配置 (Zensical 原生全兼容) -----------------
 theme:
@@ -95,6 +98,20 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+
+# ----------------- 额外 CSS -----------------
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/extra2.css
+  - stylesheets/ziti.css
+  - stylesheets/customize.css
+
+# ----------------- 页脚社交链接 -----------------
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/YH7916
+      name: GitHub
 
 # ----------------- 外部脚本与样式 -----------------
 extra_javascript:
