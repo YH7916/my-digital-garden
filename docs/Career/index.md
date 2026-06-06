@@ -1,8 +1,8 @@
 ---
-title: 💼 Career
+title: 💼 实习
 ---
 
-# Career
+# 实习
 
 实习经历 · 面经整理 · AI Agent 技术复盘
 

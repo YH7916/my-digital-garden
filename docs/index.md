@@ -7,7 +7,7 @@ hide:
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Caveat:wght@700&display=swap" rel="stylesheet">
 
 <div class="yohaku-header-row">
   <div class="yohaku-header-text">
@@ -104,14 +104,16 @@ hide:
   padding: 4px 14px;
   margin-left: 8px;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  border: 2px dashed #518FC1;
+  border: 4px dashed #518FC1;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(81, 143, 193, 0.15);
   overflow: hidden;
 }
 
 .yohaku-name-box .name-text {
-  font-weight: 800;
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  font-size: 1.15em;
   color: #2d3436;
   position: relative;
   z-index: 2;
@@ -131,8 +133,8 @@ hide:
 
 [data-md-color-scheme="slate"] .yohaku-name-box {
   background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
-  border-color: #68d391;
-  box-shadow: 0 2px 8px rgba(104, 211, 145, 0.2);
+  border-color: #518FC1;
+  box-shadow: 0 2px 8px rgba(81, 143, 193, 0.3);
 }
 
 [data-md-color-scheme="slate"] .yohaku-name-box .name-text { color: #f7fafc; }

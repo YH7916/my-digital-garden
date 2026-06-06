@@ -1,7 +1,7 @@
 nav:
-  - index.md
+  - 🏠 首页: index.md
   - 🔬 科研: Research
-  - 💼 Career: Career
+  - 💼 实习: Career
   - 🧩 算法: Dev
   - ✍️ 随笔: Diary
   - 📚 课程笔记: Notes

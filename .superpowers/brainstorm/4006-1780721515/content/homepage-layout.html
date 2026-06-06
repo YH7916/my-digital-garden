@@ -1,0 +1,123 @@
+<h2>首页布局风格</h2>
+<p class="subtitle">你的博客首页目前用 admonition 卡片展示各板块。以下三种方向，哪个更符合你的感觉？</p>
+
+<div class="cards">
+
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background:#f8f9fa;padding:16px;font-family:system-ui;border-radius:6px;font-size:12px;line-height:1.6;">
+        <div style="text-align:center;padding:20px 0 12px;">
+          <div style="font-size:22px;font-weight:700;color:#1a1a2e;">🪴 Yohaku 的数字花园</div>
+          <div style="color:#666;font-size:11px;margin-top:4px;">浙大CS大二 · 技术 · 写作 · 折腾</div>
+          <div style="margin-top:12px;display:flex;gap:8px;justify-content:center;">
+            <span style="background:#4f6ef7;color:#fff;padding:4px 12px;border-radius:20px;font-size:10px;">开始探索</span>
+            <span style="border:1px solid #ccc;padding:4px 12px;border-radius:20px;font-size:10px;">关于我</span>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px;">
+          <div style="background:#fff;border:1px solid #e0e0e0;border-radius:10px;padding:10px;box-shadow:0 2px 8px rgba(0,0,0,.06);">
+            <div style="font-size:14px;margin-bottom:4px;">📚 课程笔记</div>
+            <div style="font-size:10px;color:#888;">大物 · 概统 · OOP</div>
+          </div>
+          <div style="background:#fff;border:1px solid #e0e0e0;border-radius:10px;padding:10px;box-shadow:0 2px 8px rgba(0,0,0,.06);">
+            <div style="font-size:14px;margin-bottom:4px;">🛠️ 工具工坊</div>
+            <div style="font-size:10px;color:#888;">折腾记录 · 开发日志</div>
+          </div>
+          <div style="background:#fff;border:1px solid #e0e0e0;border-radius:10px;padding:10px;box-shadow:0 2px 8px rgba(0,0,0,.06);">
+            <div style="font-size:14px;margin-bottom:4px;">✍️ 碎笔杂言</div>
+            <div style="font-size:10px;color:#888;">随笔 · 小作文</div>
+          </div>
+          <div style="background:#fff;border:1px solid #e0e0e0;border-radius:10px;padding:10px;box-shadow:0 2px 8px rgba(0,0,0,.06);">
+            <div style="font-size:14px;margin-bottom:4px;">🧪 实验室</div>
+            <div style="font-size:10px;color:#888;">ZipLab · 项目</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A · 简洁卡片网格</h3>
+      <p>居中标题 + 2×N 卡片网格，干净现代，适合快速扫览板块入口。参考 Wcowin 的风格简化版。</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background:#f8f9fa;padding:16px;font-family:system-ui;border-radius:6px;font-size:12px;line-height:1.6;">
+        <div style="display:flex;gap:16px;align-items:center;padding:12px 0 16px;">
+          <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#667eea,#764ba2);flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#fff;font-size:22px;">Y</div>
+          <div>
+            <div style="font-size:16px;font-weight:700;color:#1a1a2e;">Hi, 我是 Yohaku</div>
+            <div style="font-size:10px;color:#666;margin-top:2px;">浙大CS大二 · 喜欢折腾 · 学围棋 AI</div>
+            <div style="margin-top:6px;display:flex;gap:6px;">
+              <span style="background:#667eea;color:#fff;padding:3px 10px;border-radius:20px;font-size:9px;">探索</span>
+              <span style="border:1px solid #ccc;padding:3px 10px;border-radius:20px;font-size:9px;">关于</span>
+            </div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;">
+          <div style="background:#fff;border-radius:8px;padding:8px;box-shadow:0 2px 6px rgba(0,0,0,.07);text-align:center;">
+            <div style="font-size:16px;">📚</div>
+            <div style="font-size:9px;font-weight:600;margin-top:2px;">课程笔记</div>
+          </div>
+          <div style="background:#fff;border-radius:8px;padding:8px;box-shadow:0 2px 6px rgba(0,0,0,.07);text-align:center;">
+            <div style="font-size:16px;">🛠️</div>
+            <div style="font-size:9px;font-weight:600;margin-top:2px;">工具工坊</div>
+          </div>
+          <div style="background:#fff;border-radius:8px;padding:8px;box-shadow:0 2px 6px rgba(0,0,0,.07);text-align:center;">
+            <div style="font-size:16px;">✍️</div>
+            <div style="font-size:9px;font-weight:600;margin-top:2px;">碎笔杂言</div>
+          </div>
+        </div>
+        <div style="margin-top:8px;padding:8px;background:#fff;border-radius:8px;border-left:3px solid #667eea;font-size:9px;color:#555;">
+          🕰️ 近期：加入 ZipLab · 刷力扣 Hot100 · 博客重新上线
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B · 个人 Hero + 网格</h3>
+      <p>左侧头像+介绍、右侧内容网格，更有个人感，适合把"人"放在首位的博客风格。</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background:#f8f9fa;padding:16px;font-family:system-ui;border-radius:6px;font-size:12px;line-height:1.6;">
+        <div style="text-align:center;padding:10px 0 14px;border-bottom:1px solid #eee;margin-bottom:10px;">
+          <div style="font-size:20px;font-weight:700;">🪴 数字花园</div>
+          <div style="font-size:10px;color:#888;margin-top:3px;">在求学路上的思考沉淀</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:6px;">
+          <div style="background:#fff;border-radius:8px;padding:8px 12px;box-shadow:0 1px 4px rgba(0,0,0,.06);display:flex;align-items:center;gap:10px;">
+            <span style="font-size:16px;">📚</span>
+            <div>
+              <div style="font-weight:600;font-size:10px;">课程笔记</div>
+              <div style="font-size:9px;color:#999;">大物 · 概统 · OOP · 数据库</div>
+            </div>
+            <span style="margin-left:auto;color:#ccc;font-size:10px;">→</span>
+          </div>
+          <div style="background:#fff;border-radius:8px;padding:8px 12px;box-shadow:0 1px 4px rgba(0,0,0,.06);display:flex;align-items:center;gap:10px;">
+            <span style="font-size:16px;">🛠️</span>
+            <div>
+              <div style="font-weight:600;font-size:10px;">工具工坊</div>
+              <div style="font-size:9px;color:#999;">折腾记录 · 开发日志</div>
+            </div>
+            <span style="margin-left:auto;color:#ccc;font-size:10px;">→</span>
+          </div>
+          <div style="background:#fff;border-radius:8px;padding:8px 12px;box-shadow:0 1px 4px rgba(0,0,0,.06);display:flex;align-items:center;gap:10px;">
+            <span style="font-size:16px;">✍️</span>
+            <div>
+              <div style="font-weight:600;font-size:10px;">碎笔杂言</div>
+              <div style="font-size:9px;color:#999;">随笔 · 小作文 · 杂感</div>
+            </div>
+            <span style="margin-left:auto;color:#ccc;font-size:10px;">→</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C · 竖向列表导航</h3>
+      <p>极简横向列表，每行一个板块，带副标题说明。更像维基目录，轻量优雅。</p>
+    </div>
+  </div>
+
+</div>

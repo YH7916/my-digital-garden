@@ -4,10 +4,22 @@ title: 🧩 算法
 
 # 算法
 
-力扣 Hot100 · 手撕代码 · ACM 模式
+Hot100 题型笔记 · Python 模板
 
 ---
 
-## 题解整理
-
-- [力扣 Hot100](力扣Hot100/index.md)
+- [哈希表](hash-table.md)
+- [双指针](double-pointers.md)
+- [滑动窗口](sliding-window.md)
+- [栈/单调栈](stack.md)
+- [链表](linked-list.md)
+- [二叉树](binary-tree.md)
+- [二分查找](binary-search.md)
+- [动态规划](dp.md)
+- [回溯](backtracking.md)
+- [图/BFS/DFS](graph.md)
+- [贪心](greedy.md)
+- [堆](heap.md)
+- [矩阵](matrix.md)
+- [Trie](trie.md)
+- [数组综合](ordinary-array.md)

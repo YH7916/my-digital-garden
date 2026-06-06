@@ -11,6 +11,84 @@ docs_dir = "docs"
 site_dir = "site"
 use_directory_urls = true
 
+nav = [
+    { "🏠 首页" = "index.md" },
+    { "🔬 科研" = [
+        "Research/index.md",
+        { "TinyML" = [
+            "Research/TinyML/index.md",
+            "Research/TinyML/lab1-pruning.md",
+            "Research/TinyML/lab2-quantization.md",
+            "Research/TinyML/lab3-nas.md",
+            "Research/TinyML/lab4-awq.md",
+            "Research/TinyML/overview.md",
+        ]},
+    ]},
+    { "💼 实习" = [
+        "Career/index.md",
+        { "实习经历" = [
+            "Career/Internship/index.md",
+            "Career/Internship/younavi-agent-deep-dive.md",
+        ]},
+        { "面试复盘" = [
+            "Career/Interview/index.md",
+            "Career/Interview/kimi-first-round-debrief.md",
+            "Career/Interview/kimi-second-round-debrief.md",
+            "Career/Interview/taotian-agent-first-round.md",
+            "Career/Interview/taotian-agent-second-round.md",
+        ]},
+    ]},
+    { "🧩 算法" = [
+        "Dev/index.md",
+        "Dev/backtracking.md",
+        "Dev/binary-search.md",
+        "Dev/binary-tree.md",
+        "Dev/double-pointers.md",
+        "Dev/dp.md",
+        "Dev/graph.md",
+        "Dev/greedy.md",
+        "Dev/hash-table.md",
+        "Dev/heap.md",
+        "Dev/linked-list.md",
+        "Dev/matrix.md",
+        "Dev/ordinary-array.md",
+        "Dev/sliding-window.md",
+        "Dev/stack.md",
+        "Dev/trie.md",
+    ]},
+    { "✍️ 随笔" = [
+        "Diary/index.md",
+        "Diary/2018年，赫鲁晓夫楼里上择校补课班的日子.md",
+        "Diary/「学霸变学渣」和「学渣变学霸」分别是什么样的体验？.md",
+        "Diary/七夕快乐.md",
+        "Diary/十二月末.md",
+        "Diary/零上十四度，我的心里下了一场雪.md",
+        { "更古早的说说" = [
+            "Diary/更古早的说说/2023.7.30.md",
+            "Diary/更古早的说说/天地人,你我他.md",
+            "Diary/更古早的说说/闲聊而已.md",
+        ]},
+    ]},
+    { "📚 课程笔记" = [
+        "Notes/index.md",
+        { "大物" = [
+            "Notes/大物/index.md",
+            "Notes/大物/期中复习.md",
+            "Notes/大物/期末复习：光学.md",
+            "Notes/大物/期末复习：电磁学.md",
+            "Notes/大物/期末复习：量子物理.md",
+            "Notes/大物/电磁学.md",
+            "Notes/大物/知识点.md",
+        ]},
+        { "概统" = [
+            "Notes/概统/index.md",
+            "Notes/概统/概统.md",
+            "Notes/概统/第一部分：概率论核心计算与大数定律 (Ch1 - Ch6).md",
+            "Notes/概统/第二部分：统计推断体系（Ch7 - Ch9）.md",
+        ]},
+    ]},
+]
+
 repo_url = "https://github.com/YH7916/my-digital-garden"
 repo_name = "YH7916/my-digital-garden"
 
@@ -41,7 +119,6 @@ features = [
     "navigation.instant.progress",
     "navigation.tabs",
     "navigation.tabs.sticky",
-    "navigation.sections",
     "navigation.indexes",
     "navigation.path",
     "navigation.top",
@@ -126,7 +203,7 @@ toc_depth = 3
 generic = true
 
 [project.markdown_extensions.pymdownx.betterem]
-smart_enable = "all"
+smart_enable = "underscore"
 
 [project.markdown_extensions.pymdownx.caret]
 [project.markdown_extensions.pymdownx.mark]
