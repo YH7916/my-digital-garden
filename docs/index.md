@@ -125,6 +125,10 @@ hide:
   display: none;
 }
 
+.md-content__button {
+  display: none;
+}
+
 .yohaku-header-row {
   display: grid;
   grid-template-columns: minmax(0, 1.08fr) minmax(220px, 0.82fr);
@@ -395,6 +399,7 @@ hide:
   }
   .md-typeset .yohaku-header-title {
     font-size: clamp(2.5rem, 13vw, 4rem);
+    line-height: 1.16;
     margin-bottom: 18px;
   }
   .yohaku-name-box {
@@ -433,6 +438,7 @@ hide:
   }
   .md-typeset .yohaku-header-title {
     font-size: clamp(2.25rem, 12vw, 3.25rem);
+    line-height: 1.18;
   }
   .yohaku-header-btns {
     width: 100%;
