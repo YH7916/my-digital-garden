@@ -1,6 +1,11 @@
 ---
 title: 双指针
-tags: [learning, leetcode, hot100, two-pointers]
+description: 双指针题型模板与 Hot100 题解，覆盖三数之和、接雨水、盛水容器和移动零。
+tags:
+  - learning
+  - leetcode
+  - hot100
+  - two-pointers
 updated: 2026-05-27
 ---
 

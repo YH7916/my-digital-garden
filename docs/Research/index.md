@@ -1,5 +1,6 @@
 ---
 title: 🔬 科研
+description: ZipLab、Efficient LLM 与 TinyML 方向的科研笔记入口。
 ---
 
 # 科研

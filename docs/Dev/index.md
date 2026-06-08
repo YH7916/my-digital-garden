@@ -1,5 +1,6 @@
 ---
 title: 🧩 算法
+description: LeetCode Hot100 题型笔记与 Python 模板入口。
 ---
 
 # 算法

@@ -1,6 +1,11 @@
 ---
 title: 矩阵
-tags: [learning, leetcode, hot100, matrix]
+description: 矩阵题型模板与 Hot100 题解，覆盖旋转图像、螺旋矩阵、矩阵置零和二维搜索。
+tags:
+  - learning
+  - leetcode
+  - hot100
+  - matrix
 updated: 2026-05-27
 ---
 

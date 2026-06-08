@@ -1,6 +1,11 @@
 ---
 title: 链表
-tags: [learning, leetcode, hot100, linked-list]
+description: 链表题型模板与 Hot100 题解，覆盖反转、合并、环、LRU、排序和复制随机链表。
+tags:
+  - learning
+  - leetcode
+  - hot100
+  - linked-list
 updated: 2026-05-27
 ---
 

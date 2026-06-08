@@ -1,6 +1,12 @@
 ---
 title: Lab3 - Neural Architecture Search (NAS)
-tags: [tinyml, nas, ofa, mcunet, evolutionary-search]
+description: TinyML NAS 实验笔记，梳理 OFA 超网、效率指标、准确率预测器与搜索策略。
+tags:
+  - tinyml
+  - nas
+  - ofa
+  - mcunet
+  - evolutionary-search
 updated: 2026-05-04
 publish: true
 blog_dest: Research/TinyML/lab3-nas.md

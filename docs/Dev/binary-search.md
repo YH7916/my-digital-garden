@@ -1,6 +1,11 @@
 ---
 title: 二分查找
-tags: [learning, leetcode, hot100, binary-search]
+description: 二分查找题型模板与 Hot100 题解，覆盖旋转数组、边界查找和二维矩阵搜索。
+tags:
+  - learning
+  - leetcode
+  - hot100
+  - binary-search
 updated: 2026-05-27
 ---
 

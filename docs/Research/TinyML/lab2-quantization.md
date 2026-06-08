@@ -1,6 +1,10 @@
 ---
 title: Lab2 Quantization 笔记
-tags: [tinyml, quantization, pytorch]
+description: TinyML 量化实验笔记，覆盖 K-Means 量化、线性量化、整数推理与 BN Fusion。
+tags:
+  - tinyml
+  - quantization
+  - pytorch
 updated: 2026-05-04
 publish: true
 blog_dest: Research/TinyML/lab2-quantization.md
@@ -202,7 +206,7 @@ BatchNorm 做的是对输出做线性变换（缩放+平移），可以直接合
 | `tensor.view(1, -1)` | 改变形状，-1 表示自动计算该维度大小 |
 | `tensor.float()` | 转成浮点类型 |
 | `tensor.to(torch.int8)` | 转成 8-bit 整数类型 |
-| `tensor.clamp(a, b)` | 截断，超出 [a,b] 的值强制拉回边界 |
+| `tensor.clamp(a, b)` | 截断，超出 $[a,b]$ 的值强制拉回边界 |
 | `tensor.round()` | 四舍五入 |
 | `tensor[bool_array]` | 布尔索引，筛选为 True 的元素 |
 | `centroids[labels]` | Fancy indexing，用整数数组当下标取值 |

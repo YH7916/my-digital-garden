@@ -1,6 +1,11 @@
 ---
 title: 回溯
-tags: [learning, leetcode, hot100, backtracking]
+description: 回溯题型模板与 Hot100 题解，覆盖组合、排列、子集、N 皇后和搜索。
+tags:
+  - learning
+  - leetcode
+  - hot100
+  - backtracking
 updated: 2026-05-27
 ---
 

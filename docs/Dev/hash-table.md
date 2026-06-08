@@ -1,6 +1,11 @@
 ---
 title: 哈希表
-tags: [learning, leetcode, hot100, hash-table]
+description: 哈希表题型模板与 Hot100 题解，覆盖两数之和、字母异位词、最长连续序列和前缀和。
+tags:
+  - learning
+  - leetcode
+  - hot100
+  - hash-table
 updated: 2026-05-27
 ---
 

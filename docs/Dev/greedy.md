@@ -1,6 +1,11 @@
 ---
 title: 贪心
-tags: [learning, leetcode, hot100, greedy]
+description: 贪心题型模板与 Hot100 题解，覆盖跳跃游戏、股票买卖和划分字母区间。
+tags:
+  - learning
+  - leetcode
+  - hot100
+  - greedy
 updated: 2026-05-27
 ---
 

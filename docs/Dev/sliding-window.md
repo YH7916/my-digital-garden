@@ -1,6 +1,11 @@
 ---
 title: 滑动窗口
-tags: [learning, leetcode, hot100, sliding-window]
+description: 滑动窗口题型模板与 Hot100 题解，覆盖无重复子串、最小覆盖子串、窗口最大值和异位词。
+tags:
+  - learning
+  - leetcode
+  - hot100
+  - sliding-window
 updated: 2026-05-27
 ---
 

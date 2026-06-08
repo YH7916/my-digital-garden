@@ -1,6 +1,10 @@
 ---
 title: Lab1 Pruning 笔记
-tags: [tinyml, pruning, pytorch]
+description: TinyML 剪枝实验笔记，整理 fine-grained pruning、channel pruning 与敏感度分析。
+tags:
+  - tinyml
+  - pruning
+  - pytorch
 updated: 2026-05-03
 publish: true
 blog_dest: Research/TinyML/lab1-pruning.md

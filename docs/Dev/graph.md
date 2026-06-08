@@ -1,6 +1,13 @@
 ---
 title: 图与 BFS/DFS
-tags: [learning, leetcode, hot100, graph, bfs, dfs]
+description: 图与 BFS/DFS 题型模板，覆盖岛屿数量、课程表和腐烂橘子。
+tags:
+  - learning
+  - leetcode
+  - hot100
+  - graph
+  - bfs
+  - dfs
 updated: 2026-05-27
 ---
 

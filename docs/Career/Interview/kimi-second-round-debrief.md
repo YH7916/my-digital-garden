@@ -1,6 +1,14 @@
 ---
 title: Kimi 二面录音复盘：coding 现场崩点与恢复路线
-tags: [learning, llm, agent, interview, kimi, coding, recovery]
+description: Kimi 二面复盘，分析 coding 现场问题、失败层级与修复路线。
+tags:
+  - learning
+  - llm
+  - agent
+  - interview
+  - kimi
+  - coding
+  - recovery
 updated: 2026-05-28
 source: "C:/Users/Yohaku/Documents/xwechat_files/wxid_mho4ukfg1ba022_b777/msg/file/2026-05/录音转文本结果_202605282219.docx"
 publish: true

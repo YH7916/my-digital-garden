@@ -1,6 +1,11 @@
 ---
 title: 二叉树
-tags: [learning, leetcode, hot100, binary-tree]
+description: 二叉树题型模板与 Hot100 题解，覆盖遍历、BST、路径、构造和最近公共祖先。
+tags:
+  - learning
+  - leetcode
+  - hot100
+  - binary-tree
 updated: 2026-05-27
 ---
 

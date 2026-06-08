@@ -1,5 +1,6 @@
 ---
 title: TinyML
+description: TinyML 系列实验与模型压缩笔记，覆盖剪枝、量化、NAS 与 AWQ。
 ---
 
 # TinyML

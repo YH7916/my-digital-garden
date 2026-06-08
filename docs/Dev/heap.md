@@ -1,6 +1,11 @@
 ---
 title: 堆
-tags: [learning, leetcode, hot100, heap]
+description: 堆题型模板与 Hot100 题解，覆盖第 K 大元素、数据流中位数和前 K 高频元素。
+tags:
+  - learning
+  - leetcode
+  - hot100
+  - heap
 updated: 2026-05-27
 ---
 

@@ -1,6 +1,15 @@
 ---
 title: 淘天 Agent 二面面经信号拆解
-tags: [learning, llm, agent, interview, taotian, redisearch, spring, network]
+description: 淘天 Agent 二面准备稿，整理业务表达、向量检索、Spring、网络与 Agent 执行循环。
+tags:
+  - learning
+  - llm
+  - agent
+  - interview
+  - taotian
+  - redisearch
+  - spring
+  - network
 updated: 2026-06-04
 source: 用户转述牛客淘天 Agent 二面面经
 publish: true

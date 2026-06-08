@@ -1,6 +1,12 @@
 ---
 title: YouNavi AI Agent 项目深挖稿
-tags: [project, internship, agent, interview, younavi]
+description: YouNavi AI Agent 实习项目复盘，整理模型接入、CLI/MCP、Skills 与稳定性经验。
+tags:
+  - project
+  - internship
+  - agent
+  - interview
+  - younavi
 updated: 2026-05-10
 source: D:/Desktop/younavi-pr-summary-ai-agent-internship-2026-02-09-to-2026-05-09.md
 publish: true

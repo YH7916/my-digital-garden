@@ -1,6 +1,11 @@
 ---
 title: 数组综合
-tags: [learning, leetcode, hot100, array]
+description: 数组综合题型模板与 Hot100 题解，覆盖下一个排列、最大子数组、合并区间和原地操作。
+tags:
+  - learning
+  - leetcode
+  - hot100
+  - array
 updated: 2026-05-27
 ---
 

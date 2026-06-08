@@ -6,6 +6,7 @@
 site_name = "Yohaku 的数字花园"
 site_description = "浙大CS学生的技术笔记与生活碎片"
 site_author = "Yohaku"
+site_url = "https://yohaku.codes/"
 copyright = "Copyright &copy; 2024~2026 Yohaku"
 docs_dir = "docs"
 site_dir = "site"

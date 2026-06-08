@@ -1,6 +1,11 @@
 ---
 title: 动态规划
-tags: [learning, leetcode, hot100, dp]
+description: 动态规划题型模板与 Hot100 题解，覆盖路径、背包、序列、字符串与区间问题。
+tags:
+  - learning
+  - leetcode
+  - hot100
+  - dp
 updated: 2026-05-27
 ---
 

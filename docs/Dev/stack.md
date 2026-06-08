@@ -1,6 +1,12 @@
 ---
 title: 栈与单调栈
-tags: [learning, leetcode, hot100, stack, monotonic-stack]
+description: 栈与单调栈题型模板，覆盖括号匹配、柱状图最大矩形、最小栈、字符串解码和每日温度。
+tags:
+  - learning
+  - leetcode
+  - hot100
+  - stack
+  - monotonic-stack
 updated: 2026-05-27
 ---
 

@@ -1,6 +1,14 @@
 ---
 title: Kimi 面试复盘与暑假 offer 恢复计划
-tags: [learning, llm, agent, interview, kimi, recovery, leetcode]
+description: Kimi 一面复盘，整理暴露问题、方向取舍与后续八周恢复计划。
+tags:
+  - learning
+  - llm
+  - agent
+  - interview
+  - kimi
+  - recovery
+  - leetcode
 updated: 2026-05-23
 source: "C:/Users/Yohaku/navi-ai/Yohaku/audio-files/标准录音 4_1.txt"
 publish: true

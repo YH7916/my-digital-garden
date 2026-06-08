@@ -1,6 +1,11 @@
 ---
 title: Lab4 AWQ 量化笔记
-tags: [tinyml, quantization, awq, llm]
+description: LLM AWQ 量化笔记，整理伪量化、异常通道保护、scale 搜索与 PyTorch 操作。
+tags:
+  - tinyml
+  - quantization
+  - awq
+  - llm
 updated: 2026-05-05
 publish: true
 blog_dest: Research/TinyML/lab4-awq.md

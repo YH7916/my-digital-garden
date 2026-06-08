@@ -1,6 +1,11 @@
 ---
-title: Trie 
-tags: [learning, leetcode, hot100, trie]
+title: Trie
+description: Trie 字典树实现模板与前缀查询题解。
+tags:
+  - learning
+  - leetcode
+  - hot100
+  - trie
 updated: 2026-05-27
 ---
 

@@ -1,6 +1,14 @@
 ---
 title: 淘天 Agent 一面面经信号拆解
-tags: [learning, llm, agent, interview, taotian, ai-coding, backend]
+description: 淘天 Agent 一面准备稿，拆解 Agent 机制、高并发优惠券、线程池与 MySQL 优化题。
+tags:
+  - learning
+  - llm
+  - agent
+  - interview
+  - taotian
+  - ai-coding
+  - backend
 updated: 2026-06-04
 source: 用户转述牛客淘天 Agent 一面面经
 publish: true

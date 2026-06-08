@@ -1,5 +1,6 @@
 ---
 title: 💼 实习
+description: AI Agent 实习经历、项目复盘与面试准备资料入口。
 ---
 
 # 实习

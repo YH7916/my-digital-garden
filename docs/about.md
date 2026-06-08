@@ -1,5 +1,6 @@
 ---
 title: 👋 关于
+description: 关于 Yohaku 的个人背景、科研方向、实习经历、课程与生活节奏。
 ---
 
 ## 👋 你好，我是 Yohaku

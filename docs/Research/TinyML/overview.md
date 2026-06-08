@@ -1,6 +1,14 @@
 ---
 title: TinyML 课程总览：从零基础到科研衔接
-tags: [tinyml, overview, pruning, quantization, nas, awq, llm]
+description: 串联 MIT 6.5940 TinyML 四个实验，梳理从剪枝、量化、NAS 到 AWQ 的主线。
+tags:
+  - tinyml
+  - overview
+  - pruning
+  - quantization
+  - nas
+  - awq
+  - llm
 updated: 2026-05-05
 publish: true
 blog_dest: Research/TinyML/overview.md
