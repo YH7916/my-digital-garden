@@ -30,7 +30,7 @@ SUB_LABELS = {
 }
 
 # Files/dirs to skip entirely
-SKIP = {"index.md", ".pages", ".obsidian", ".trash", "assets", "stylesheets"}
+SKIP = {"index.md", ".pages", ".obsidian", ".trash", "assets", "stylesheets", "images"}
 
 
 def scan(dir_path: Path, prefix: str) -> list:
