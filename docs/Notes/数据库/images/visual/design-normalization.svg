@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="640" viewBox="0 0 1160 640">
+  <rect width="1160" height="640" fill="#fbfaf7"/>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2,2 L10,6 L2,10 Z" fill="#475569"/></marker>
+  </defs>
+  <text x="580" y="54" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="32" font-weight="700" fill="#1f2933">数据库设计：先画现实，再消除坏表</text>
+  <g font-family="Segoe UI, Microsoft YaHei, sans-serif">
+    <rect x="55" y="120" width="205" height="150" rx="16" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+    <text x="157" y="174" text-anchor="middle" font-size="24" font-weight="700" fill="#075985">现实需求</text>
+    <text x="157" y="214" text-anchor="middle" font-size="18" fill="#334155">有哪些对象？</text>
+    <text x="157" y="244" text-anchor="middle" font-size="18" fill="#334155">有哪些业务规则？</text>
+
+    <rect x="330" y="120" width="205" height="150" rx="16" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="432" y="174" text-anchor="middle" font-size="24" font-weight="700" fill="#166534">E-R 图</text>
+    <text x="432" y="214" text-anchor="middle" font-size="18" fill="#334155">实体 entity</text>
+    <text x="432" y="244" text-anchor="middle" font-size="18" fill="#334155">联系 relationship</text>
+
+    <rect x="605" y="120" width="205" height="150" rx="16" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="707" y="174" text-anchor="middle" font-size="24" font-weight="700" fill="#92400e">关系模式</text>
+    <text x="707" y="214" text-anchor="middle" font-size="18" fill="#334155">表 + 主键</text>
+    <text x="707" y="244" text-anchor="middle" font-size="18" fill="#334155">外键连接表</text>
+
+    <rect x="880" y="120" width="225" height="150" rx="16" fill="#ffe4e6" stroke="#e11d48" stroke-width="2"/>
+    <text x="992" y="174" text-anchor="middle" font-size="24" font-weight="700" fill="#9f1239">规范化</text>
+    <text x="992" y="214" text-anchor="middle" font-size="18" fill="#334155">函数依赖 FD</text>
+    <text x="992" y="244" text-anchor="middle" font-size="18" fill="#334155">3NF / BCNF</text>
+
+    <line x1="260" y1="195" x2="330" y2="195" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="535" y1="195" x2="605" y2="195" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="810" y1="195" x2="880" y2="195" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="165" y="390" width="830" height="132" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="580" y="430" text-anchor="middle" font-size="25" font-weight="700" fill="#111827">范式的直觉</text>
+    <text x="580" y="470" text-anchor="middle" font-size="21" fill="#334155">一张表只表达一类事实；非主键列应该依赖“整个键”，而不是依赖别的非主键列。</text>
+    <text x="580" y="505" text-anchor="middle" font-size="21" fill="#334155">目的不是形式主义，是减少冗余、更新异常、插入异常、删除异常。</text>
+  </g>
+</svg>

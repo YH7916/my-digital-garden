@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="700" viewBox="0 0 1160 700">
+  <rect width="1160" height="700" fill="#fbfaf7"/>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2,2 L10,6 L2,10 Z" fill="#475569"/></marker>
+  </defs>
+  <text x="580" y="54" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="32" font-weight="700" fill="#1f2933">事务与恢复：并发不乱，崩溃不丢</text>
+  <g font-family="Segoe UI, Microsoft YaHei, sans-serif">
+    <rect x="70" y="120" width="470" height="220" rx="18" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+    <text x="305" y="162" text-anchor="middle" font-size="25" font-weight="700" fill="#075985">ACID 四件事</text>
+    <text x="115" y="215" font-size="21" fill="#334155">A 原子性：要么全做，要么回滚</text>
+    <text x="115" y="255" font-size="21" fill="#334155">C 一致性：执行前后满足约束</text>
+    <text x="115" y="295" font-size="21" fill="#334155">I 隔离性：并发看起来像串行</text>
+    <text x="115" y="335" font-size="21" fill="#334155">D 持久性：提交后崩溃也不丢</text>
+
+    <rect x="620" y="120" width="470" height="220" rx="18" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="855" y="162" text-anchor="middle" font-size="25" font-weight="700" fill="#166534">两个核心机制</text>
+    <text x="665" y="225" font-size="22" fill="#334155">并发控制：锁 / 时间戳 / MVCC</text>
+    <text x="665" y="270" font-size="22" fill="#334155">恢复系统：log / undo / redo / checkpoint</text>
+    <text x="665" y="315" font-size="22" fill="#334155">直觉：先记账，再改数据</text>
+
+    <rect x="140" y="465" width="190" height="84" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="235" y="516" text-anchor="middle" font-size="22" font-weight="700" fill="#92400e">write log</text>
+    <rect x="405" y="465" width="190" height="84" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="500" y="516" text-anchor="middle" font-size="22" font-weight="700" fill="#92400e">modify page</text>
+    <rect x="670" y="465" width="190" height="84" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="765" y="516" text-anchor="middle" font-size="22" font-weight="700" fill="#92400e">commit</text>
+    <rect x="935" y="465" width="150" height="84" rx="12" fill="#ffe4e6" stroke="#e11d48" stroke-width="2"/>
+    <text x="1010" y="516" text-anchor="middle" font-size="22" font-weight="700" fill="#9f1239">crash?</text>
+
+    <line x1="330" y1="507" x2="405" y2="507" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="595" y1="507" x2="670" y2="507" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="860" y1="507" x2="935" y2="507" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <text x="580" y="630" text-anchor="middle" font-size="24" font-weight="700" fill="#111827">记忆句：锁/MVCC 负责“现在别乱”，日志负责“出事能救”。</text>
+  </g>
+</svg>

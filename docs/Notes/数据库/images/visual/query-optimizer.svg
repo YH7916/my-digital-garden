@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620">
+  <rect width="1120" height="620" fill="#fbfaf7"/>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2,2 L10,6 L2,10 Z" fill="#475569"/></marker>
+  </defs>
+  <text x="560" y="54" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="32" font-weight="700" fill="#1f2933">查询处理与优化：同一句 SQL 可以有很多走法</text>
+  <g font-family="Segoe UI, Microsoft YaHei, sans-serif">
+    <rect x="70" y="140" width="190" height="110" rx="14" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+    <text x="165" y="184" text-anchor="middle" font-size="24" font-weight="700" fill="#075985">SQL</text>
+    <text x="165" y="216" text-anchor="middle" font-size="18" fill="#334155">用户声明需求</text>
+
+    <rect x="330" y="140" width="190" height="110" rx="14" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="425" y="184" text-anchor="middle" font-size="24" font-weight="700" fill="#166534">逻辑计划</text>
+    <text x="425" y="216" text-anchor="middle" font-size="18" fill="#334155">选择/投影/join</text>
+
+    <rect x="590" y="140" width="190" height="110" rx="14" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="685" y="184" text-anchor="middle" font-size="24" font-weight="700" fill="#92400e">优化器</text>
+    <text x="685" y="216" text-anchor="middle" font-size="18" fill="#334155">估计 cost</text>
+
+    <rect x="850" y="140" width="190" height="110" rx="14" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+    <text x="945" y="184" text-anchor="middle" font-size="24" font-weight="700" fill="#5b21b6">物理计划</text>
+    <text x="945" y="216" text-anchor="middle" font-size="18" fill="#334155">scan/index/join 算法</text>
+
+    <line x1="260" y1="195" x2="330" y2="195" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="520" y1="195" x2="590" y2="195" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="780" y1="195" x2="850" y2="195" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="150" y="350" width="820" height="132" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="560" y="390" text-anchor="middle" font-size="25" font-weight="700" fill="#111827">优化器最关心什么？</text>
+    <text x="560" y="430" text-anchor="middle" font-size="21" fill="#334155">表有多大、选择率多高、是否有索引、join 顺序、join 算法、内存够不够。</text>
+    <text x="560" y="465" text-anchor="middle" font-size="21" fill="#334155">考试题常把这些变成 I/O cost 计算；面试题常问 EXPLAIN 为什么走这个索引。</text>
+  </g>
+</svg>

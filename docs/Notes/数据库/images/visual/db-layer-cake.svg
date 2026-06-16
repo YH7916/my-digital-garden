@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="720" viewBox="0 0 1000 720">
+  <rect width="1000" height="720" fill="#fbfaf7"/>
+  <text x="500" y="54" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="32" font-weight="700" fill="#1f2933">DBMS 分层：你写 SQL，系统替你穿透到底层</text>
+  <g font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18">
+    <rect x="180" y="110" width="640" height="82" rx="12" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+    <text x="500" y="145" text-anchor="middle" font-size="25" font-weight="700" fill="#075985">视图层 View Level</text>
+    <text x="500" y="174" text-anchor="middle" fill="#334155">不同用户看到不同“窗口”：安全、简化、隐藏细节</text>
+
+    <rect x="180" y="224" width="640" height="82" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="500" y="259" text-anchor="middle" font-size="25" font-weight="700" fill="#166534">逻辑层 Logical Level</text>
+    <text x="500" y="288" text-anchor="middle" fill="#334155">表、列、主键、外键、约束；应用主要面对这一层</text>
+
+    <rect x="180" y="338" width="640" height="82" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="500" y="373" text-anchor="middle" font-size="25" font-weight="700" fill="#92400e">执行层 Execution Engine</text>
+    <text x="500" y="402" text-anchor="middle" fill="#334155">解析 SQL、生成计划、选择索引、执行 join/sort/aggregate</text>
+
+    <rect x="180" y="452" width="640" height="82" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+    <text x="500" y="487" text-anchor="middle" font-size="25" font-weight="700" fill="#5b21b6">存储层 Storage Level</text>
+    <text x="500" y="516" text-anchor="middle" fill="#334155">page、record、buffer、B+ tree、磁盘/SSD</text>
+
+    <rect x="180" y="566" width="640" height="82" rx="12" fill="#ffe4e6" stroke="#e11d48" stroke-width="2"/>
+    <text x="500" y="601" text-anchor="middle" font-size="25" font-weight="700" fill="#9f1239">可靠性层 Transaction &amp; Recovery</text>
+    <text x="500" y="630" text-anchor="middle" fill="#334155">锁/MVCC/日志/checkpoint：并发不乱，崩溃不丢</text>
+  </g>
+</svg>
