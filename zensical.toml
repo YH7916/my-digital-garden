@@ -115,7 +115,7 @@ repo_name = "YH7916/my-digital-garden"
 
 extra_css = [
     "stylesheets/ziti.css",
-    "stylesheets/customize.css",
+    "stylesheets/customize.css?v=15787081a3",
 ]
 
 extra_javascript = [
