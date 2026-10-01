@@ -34,12 +34,15 @@ flowchart TD
 
 共 **29 道既有自编练习**，逐题保留题面、解答和判分要点，分布为 5、6、5、7、6 题。题目服务概念理解和证明训练；它们不标作历年原题或本年度真题。先独立写步骤，再对照解答定位缺少的条件和证明方向；阅读完毕不等于已经掌握。
 
+新增配套：[习题集学习路线与代表题](06-practice-route.md)。将《计算理论分章习题集.pdf》的五章页码接到上述正文，提供有出处的代表题和独立参考解答；按“同章正文 → 代表题 → 未见题 → 错题重做”推进。
+
 本套保持现有五章范围，含数值函数及原始递归，不增复杂度理论、P／NP、CNF／CYK 或 PCP。这是整理边界，不代表未列主题一定不考；当年教师的完整考试范围尚未核验。
 
 ## 参考入口
 
 - [NoughtQ 浙大课程资料](https://github.com/NoughtQ/ZJU-Courses-Resources/tree/main/TOC-D3QD)：历史小测与期末复习资料入口。
-- [浙大课程攻略共享计划](https://github.com/QSCTech/zju-icicles)：历年课程资源入口。
+- [浙大课程攻略共享计划 · 计算理论](https://qsctech.github.io/zju-icicles/%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/)：教材、课件、历史作业、小测、试卷与解答入口。
+- 《计算理论分章习题集.pdf》：用户提供的 308 页题目编排，五章共有 653 个编排条目；页码对应和使用方法见[配套路线](06-practice-route.md)，不把条目数等同独立原题数。
 - [WintermelonC 计算理论笔记](https://github.com/WintermelonC/WintermelonC_Docs/tree/12183f324d59df832add19b4bbe1bbb33f58a1b1/docs/zju/compulsory_courses/computational_theory)：个人学习笔记，用于主题交叉参考。
 
 这些资料用于备课与主题核对，本正文以独立解释和推导组织；个人笔记与历史材料不作为今年教师公告或标准答案。
