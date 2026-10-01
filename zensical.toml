@@ -72,20 +72,15 @@ nav = [
     ]},
     { "📚 课程笔记" = [
         "Notes/index.md",
-        { "OOP" = [
-
-        ]},
-        { "体系结构" = [
-
-        ]},
-        { "大物" = [
-            "Notes/大物/index.md",
-            "Notes/大物/期中复习.md",
-            "Notes/大物/期末复习：光学.md",
-            "Notes/大物/期末复习：电磁学.md",
-            "Notes/大物/期末复习：量子物理.md",
-            "Notes/大物/电磁学.md",
-            "Notes/大物/知识点.md",
+        { "计算机网络" = [
+            "Notes/计算机网络/index.md",
+            "Notes/计算机网络/01-cn-overview.md",
+            "Notes/计算机网络/02-cn-physical.md",
+            "Notes/计算机网络/03-cn-data-link.md",
+            "Notes/计算机网络/04-cn-network.md",
+            "Notes/计算机网络/05-cn-transport.md",
+            "Notes/计算机网络/06-cn-application.md",
+            "Notes/计算机网络/07-cn-security.md",
         ]},
         { "操作系统" = [
             "Notes/操作系统/index.md",
@@ -103,25 +98,6 @@ nav = [
             "Notes/操作系统/12-os-mass-storage.md",
             "Notes/操作系统/13-os-io.md",
         ]},
-        { "数据库" = [
-
-        ]},
-        { "概统" = [
-            "Notes/概统/index.md",
-            "Notes/概统/概统.md",
-            "Notes/概统/第一部分：概率论核心计算与大数定律 (Ch1 - Ch6).md",
-            "Notes/概统/第二部分：统计推断体系（Ch7 - Ch9）.md",
-        ]},
-        { "计算机网络" = [
-            "Notes/计算机网络/index.md",
-            "Notes/计算机网络/01-cn-overview.md",
-            "Notes/计算机网络/02-cn-physical.md",
-            "Notes/计算机网络/03-cn-data-link.md",
-            "Notes/计算机网络/04-cn-network.md",
-            "Notes/计算机网络/05-cn-transport.md",
-            "Notes/计算机网络/06-cn-application.md",
-            "Notes/计算机网络/07-cn-security.md",
-        ]},
         { "计算理论" = [
             "Notes/计算理论/index.md",
             "Notes/计算理论/01-toc-basics.md",
@@ -129,6 +105,56 @@ nav = [
             "Notes/计算理论/03-toc-context-free.md",
             "Notes/计算理论/04-toc-turing.md",
             "Notes/计算理论/05-toc-undecidability.md",
+        ]},
+        { "OOP" = [
+            "Notes/OOP/index.md",
+            "Notes/OOP/00-exam-map.md",
+            "Notes/OOP/01-cpp-basics.md",
+            "Notes/OOP/02-class-basics.md",
+            "Notes/OOP/03-inheritance-polymorphism.md",
+            "Notes/OOP/04-move-exception.md",
+            "Notes/OOP/05-template-stl.md",
+            "Notes/OOP/06-exam-classics.md",
+        ]},
+        { "体系结构" = [
+            "Notes/体系结构/index.md",
+            "Notes/体系结构/chap1.md",
+            "Notes/体系结构/chap2.md",
+            "Notes/体系结构/chap3.md",
+            "Notes/体系结构/chap4.md",
+            "Notes/体系结构/chap5.md",
+            "Notes/体系结构/exam-drills.md",
+        ]},
+        { "大物" = [
+            "Notes/大物/index.md",
+            "Notes/大物/期中复习.md",
+            "Notes/大物/期末复习：光学.md",
+            "Notes/大物/期末复习：电磁学.md",
+            "Notes/大物/期末复习：量子物理.md",
+            "Notes/大物/电磁学.md",
+            "Notes/大物/知识点.md",
+        ]},
+        { "数据库" = [
+            "Notes/数据库/index.md",
+            "Notes/数据库/00-exam-map.md",
+            "Notes/数据库/01-relational-algebra.md",
+            "Notes/数据库/02-sql.md",
+            "Notes/数据库/03-er-model.md",
+            "Notes/数据库/04-design-normalization.md",
+            "Notes/数据库/05-storage.md",
+            "Notes/数据库/06-index-btree.md",
+            "Notes/数据库/07-query-processing.md",
+            "Notes/数据库/08-query-optimization.md",
+            "Notes/数据库/09-transactions-concurrency.md",
+            "Notes/数据库/10-recovery.md",
+            "Notes/数据库/11-xml.md",
+            "Notes/数据库/12-objective-a4-roadmap.md",
+        ]},
+        { "概统" = [
+            "Notes/概统/index.md",
+            "Notes/概统/概统.md",
+            "Notes/概统/第一部分：概率论核心计算与大数定律 (Ch1 - Ch6).md",
+            "Notes/概统/第二部分：统计推断体系（Ch7 - Ch9）.md",
         ]},
     ]},
 ]
