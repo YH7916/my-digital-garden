@@ -48,3 +48,54 @@
     grid-template-columns: 1fr !important;
   }
 }
+
+/* 课程笔记：正文、列表和原生提示块保持清晰的阅读间隔。 */
+.md-typeset .course-notes {
+  line-height: 1.85;
+}
+
+.md-typeset .course-notes h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.md-typeset .course-notes h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.md-typeset .course-notes p {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+
+.md-typeset .course-notes li + li {
+  margin-top: 0.4em;
+}
+
+.md-typeset .course-notes li > ul,
+.md-typeset .course-notes li > ol {
+  margin-top: 0.5em;
+  margin-bottom: 0.7em;
+}
+
+.md-typeset .course-notes .admonition {
+  font-size: 0.75rem;
+  line-height: 1.8;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.md-typeset .course-notes .admonition .admonition {
+  font-size: inherit;
+}
+
+.md-typeset .course-notes table:not([class]) {
+  font-size: 0.75rem;
+  line-height: 1.65;
+}
+
+.md-typeset .course-notes table:not([class]) th,
+.md-typeset .course-notes table:not([class]) td {
+  padding: 0.6rem 0.7rem;
+}
