@@ -7,8 +7,6 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: github-pages
@@ -17,22 +15,31 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v7
-      - uses: actions/configure-pages@v6
-        id: pages
+        with:
+          persist-credentials: false
       - uses: astral-sh/setup-uv@v7
       - name: Build the digital garden
-        env:
-          PAGES_URL: ${{ steps.pages.outputs.base_url }}
         run: |
-          sed -i "s|^site_url = .*|site_url = \"${PAGES_URL%/}/\"|" zensical.toml
+          sed -i 's|^site_url = .*|site_url = "https://yh7916.github.io/"|' zensical.toml
           uv run --locked --python 3.12 zensical build --clean
-      - uses: actions/upload-pages-artifact@v5
+      - uses: actions/checkout@v7
         with:
-          path: site
-      - uses: actions/deploy-pages@v5
-        id: deployment
+          repository: YH7916/yh7916.github.io
+          ref: main
+          ssh-key: ${{ secrets.PAGES_DEPLOY_KEY }}
+          path: pages
+      - name: Publish to the account site
+        working-directory: pages
+        run: |
+          rsync -a --delete --exclude='.*' ../site/ ./
+          touch .nojekyll
+          git add --all
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git -c user.name='github-actions[bot]' \
+            -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+            commit -m "Publish digital garden from ${GITHUB_SHA}"
+          git push origin HEAD:main
